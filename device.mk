@@ -84,7 +84,8 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    libion
+    libion \
+    DeviceSettings
 
 # HIDL
 PRODUCT_COPY_FILES += \
