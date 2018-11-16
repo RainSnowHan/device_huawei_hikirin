@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=hi6250
+DEVICE=hikirin
 VENDOR=huawei
 
 # Load extractutils and do some sanity checks
@@ -55,7 +55,7 @@ if [ -z "$SRC" ]; then
 fi
 
 # Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true "$CLEAN_VENDOR"
+setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true "$CLEAN_VENDOR"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
