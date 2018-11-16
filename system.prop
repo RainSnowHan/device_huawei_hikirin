@@ -7,12 +7,13 @@ ro.config.vc_call_vol_steps=7
 ro.adb.secure=1
 
 # Perf
-ro.vendor.qti.sys.fw.bg_apps_limit=60
+ro.vendor.qti.sys.fw.bg_apps_limit=45
 
 # Disable statsd
 ro.statsd.enable=false
 
 # RIL
+ro.telephony.needsMuteByRil=true
 ro.telephony.isHisiRIL=true 
 
 # Make sdcards visibile in StorageManager
