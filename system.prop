@@ -1,0 +1,31 @@
+# Audio
+audio.deep_buffer.media=true
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
+# Enable ADB authentication
+ro.adb.secure=1
+
+# Perf
+ro.vendor.qti.sys.fw.bg_apps_limit=60
+
+# Disable statsd
+ro.statsd.enable=false
+
+# RIL
+ro.telephony.isHisiRIL=true 
+
+# Make sdcards visibile in StorageManager
+persist.sys.adoptable_fbe=true
+
+# MediaCodec
+persist.sys.google_avc_enc=0
+persist.sys.sr_google_avc_enc=1
+persist.debug.wfd.enable=0
+
+# HWUI
+debug.hwui.profile=true
+debug.hwc.max_hw_overlays=0
+
+# Security Patch
+ro.build.version.security_patch_sys=2018-10-05

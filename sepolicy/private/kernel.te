@@ -1,0 +1,3 @@
+allow kernel hisee_blkdev:blk_file r_file_perms;
+allow kernel sysfs_devices_system_cpu:file write;
+allow kernel splash2_data_file:dir search;

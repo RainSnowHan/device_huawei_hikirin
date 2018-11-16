@@ -1,0 +1,28 @@
+binder_call(system_app, displayengineserver)
+allow system_app storaged:binder call;
+allow system_app wificond:binder call;
+allow system_app installd_service:service_manager find;
+allow system_app netd_service:service_manager find;
+#selinux status
+allow system_app selinuxfs:file r_file_perms;
+allow priv_app teecd_data_file:filesystem getattr;
+allow priv_app splash2_data_file:filesystem getattr;
+allow priv_app hisee_data_file:filesystem getattr;
+allow priv_app modem_secure_file:filesystem getattr;
+allow priv_app modem_fw_file:filesystem getattr;
+allow priv_app modem_nv_file:filesystem getattr;
+allow priv_app modem_log_file:filesystem getattr;
+allow priv_app device:dir {open read};
+allow priv_app proc_interrupts:file {open read };
+allow priv_app proc_modules:file {open read getattr };
+allow priv_app cust_data_file:filesystem getattr;
+allow system_app fs_bpf:dir search;
+allow priv_app mnt_modem_file:dir search;
+allow priv_app sysfs:file { read open getattr };
+allow priv_app proc:dir search;
+allow priv_app zygote:dir search;
+allow system_app proc_pagetypeinfo:file read;
+allow system_app sysfs_zram:file read;
+allow priv_app device:file {open read };
+allow system_app device:file {open read };
+allow platform_app device:file {open read };

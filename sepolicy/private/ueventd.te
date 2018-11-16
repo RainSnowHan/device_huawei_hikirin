@@ -1,0 +1,4 @@
+# Allow ueventd to read /proc/bootdevice
+allow ueventd proc_bootdevice:file r_file_perms;
+
+allow ueventd bfm_device:chr_file relabelto;

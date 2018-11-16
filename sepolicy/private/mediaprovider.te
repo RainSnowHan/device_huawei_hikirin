@@ -1,0 +1,1 @@
+allow mediaprovider device:file {open read };
