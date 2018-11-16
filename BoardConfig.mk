@@ -16,7 +16,7 @@
 
 include build/make/target/board/generic_arm64_a/BoardConfig.mk
 
-DEVICE_PATH := device/huawei/hi6250
+DEVICE_PATH := device/huawei/hikirin
 
 # Platform
 TARGET_ARCH := arm64
