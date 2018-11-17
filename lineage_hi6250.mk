@@ -26,8 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_hikirin
-PRODUCT_DEVICE := hikirin
+PRODUCT_NAME := lineage_hi6250
+PRODUCT_DEVICE := hi6250
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Project HiKirin
 PRODUCT_MANUFACTURER := Huawei
@@ -35,5 +35,3 @@ PRODUCT_MANUFACTURER := Huawei
 # Override device name
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=hi6250
-
-

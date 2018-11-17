@@ -1,1 +1,1 @@
-add_lunch_combo lineage_hikirin-userdebug
+add_lunch_combo lineage_hi6250-userdebug

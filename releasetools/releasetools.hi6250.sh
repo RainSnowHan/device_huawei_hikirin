@@ -136,6 +136,9 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
 
     # Copy over vendor media_codecs.xml
     cp /vendor/etc/media_codecs.xml /system/etc/media_codecs.xml
+
+    # HiKirin Check
+    sed -i "s/hi6250/hikirin/" /system/build.prop
 fi
 
 exit 0

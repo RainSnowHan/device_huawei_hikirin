@@ -14,4 +14,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    lineage_hikirin:$(LOCAL_DIR)/lineage_hikirin.mk
+    lineage_hi6250:$(LOCAL_DIR)/lineage_hi6250.mk
