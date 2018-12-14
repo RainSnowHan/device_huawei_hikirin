@@ -1,0 +1,3 @@
+allow vold system_data_file:lnk_file { unlink };
+allow mediaextractor sdcard_type:file read;
+allow vold hi110x_daemon_exec:file { getattr };

@@ -1,0 +1,25 @@
+# Audio
+audio.deep_buffer.media=true
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=7
+
+# Enable ADB authentication
+ro.adb.secure=1
+
+# Perf
+ro.vendor.qti.sys.fw.bg_apps_limit=60
+
+# RIL
+ro.huaweiril=true
+
+# Fingerprint Gestures
+sys.fpnav.enabled=1
+
+# Security Patch
+ro.build.version.security_patch_sys=2018-12-05
+
+# Disable sdcardfs for now
+ro.sys.sdcardfs=0
+
+# HWUi
+debug.hwui.profile=true
