@@ -136,12 +136,7 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
     # Use vndk 26
     sed -i "s/27/26/" /system/etc/init/gsi/init.vndk-27.rc
 
-    # Copy over vendor media_codecs.xml and disable unwanted HW codecs
-    cp /vendor/etc/media_codecs.xml /system/etc/media_codecs.xml
-    sed -i "s/<MediaCodec name=\"OMX.hisi.video.decoder.avc\" type=\"video\/avc\" >/<MediaCodec name=\"OMX.hisi.video.decoder.avc\" type=\"video\/no-avc\" >/g" /system/etc/media_codecs.xml
-
     sed -i "s/hi6250/hikirin/" /system/build.prop
-
 fi
 
 exit 0
