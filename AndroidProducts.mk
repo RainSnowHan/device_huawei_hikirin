@@ -24,6 +24,4 @@
 # components.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_hi6250.mk \
-    $(LOCAL_DIR)/full_hi6250.mk \
-
+    $(LOCAL_DIR)/full_hi6250.mk

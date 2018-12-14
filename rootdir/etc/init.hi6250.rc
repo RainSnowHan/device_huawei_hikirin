@@ -2,7 +2,6 @@ import /system/etc/init/connectivity/init.${ro.connectivity.chiptype}.rc
 
 on init
     mount none /system/bin/adbd /sbin/adbd bind
-    mount none /system/etc/media_codecs.xml /vendor/etc/media_codecs.xml bind
     mount none /system/etc/usb_audio_policy_configuration.xml /vendor/etc/usb_audio_policy_configuration.xml bind
     mount none /system/usr/keylayout/fingerprint.kl /vendor/usr/keylayout/fingerprint.kl bind
 
@@ -50,3 +49,18 @@ on property:sys.fpnav.enabled=1
     write /sys/devices/platform/fingerprint/nav 1
     stop fps_hal_ext
     start fps_hal_ext
+
+on property:sys.boot_completed=1 && property:ro.hardware=kirin970
+    write /sys/class/hw_power/charger/direct_charger/iin_thermal 4200
+    write /sys/class/hw_power/charger/charge_data/iin_thermal 2000
+
+on property:sys.boot_completed=1 && property:ro.hardware=hi3660
+    write /sys/class/hw_power/charger/direct_charger/iin_thermal 4000
+    write /sys/class/hw_power/charger/charge_data/iin_thermal 2000
+
+on property:sys.boot_completed=1 && property:ro.hardware=hi3650
+    write /sys/class/hw_power/charger/charge_data/iin_thermal 2000
+    
+on property:sys.boot_completed=1 && property:ro.hardware=hi6250    
+  write /sys/class/hw_power/charger/direct_charger/iin_thermal 2750
+  write /sys/class/hw_power/charger/charge_data/iin_thermal 1000
