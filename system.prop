@@ -10,7 +10,7 @@ ro.adb.secure=1
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # RIL
-ro.huaweiril=true
+ro.telephony.isHisiRIL=true
 
 # Fingerprint Gestures
 sys.fpnav.enabled=1
